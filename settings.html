@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <style>
+        input[type="text"] {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="apiKey">API Key:</label>
+        <input type="text" id="apiKey">
+    </div>
+    <div>
+        <label for="prompt">Prompt:</label>
+        <input type="text" id="prompt">
+    </div>
+    <button onclick="saveSettings()">Save</button>
+    <script>
+        function saveSettings() {
+            var apiKey = document.getElementById('apiKey').value;
+            var prompt = document.getElementById('prompt').value;
+            google.script.run.saveSettings(apiKey, prompt);
+            google.script.host.close();
+        }
+
+        (function () {
+            google.script.run.withSuccessHandler(function (settings) {
+                document.getElementById('apiKey').value = settings.apiKey || '';
+                document.getElementById('prompt').value = settings.prompt || '';
+            }).getSettings();
+        })();
+    </script>
+</body>
+
+</html>
