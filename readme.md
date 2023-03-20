@@ -4,6 +4,7 @@ Transformative script for your workplace
 
 ChatGPT-Google Sheet is a Google Sheets add-on that allows users to easily manipulate text in their spreadsheets using the OpenAI API. With a simple menu, users can translate, classify, transform, revise, ...  text within a selected range and automatically insert the transformed content into adjacent cells.
 
+![chatgpt and google sheet](generative-ai.gif)
 
 
 ## Installation
