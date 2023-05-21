@@ -1,7 +1,8 @@
 
 // Predefined API Key and Prompt
 const API_KEY = "OPENAI_API_KEY";
-const PROMPT = "Provide a single-sentence summary of the given text.";
+// const PROMPT = "Provide a single-sentence summary of the given text.";
+const PROMPT = "Translate the following into Swedish"
 // Spreadsheet ID
 const SPREADSHEET_ID = SpreadsheetApp.getActiveSpreadsheet().getId();
 
