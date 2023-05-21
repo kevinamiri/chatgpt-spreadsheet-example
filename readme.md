@@ -1,4 +1,4 @@
-# ChatGPT-Google Sheet Script
+# A simple app script example for ChatGPT and Google Sheets
 
 Transformative script for your workplace
 
